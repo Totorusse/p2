@@ -5,38 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleflex.css">
     <title>Reservia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">   
     <script src="https://kit.fontawesome.com/3ec3680ae0.js" crossorigin="anonymous"></script>
    </head>
 
 <body>
   <header>
-    <img src="logo.png" alt="Reservia">
-    <a href="index.html">S'inscrire</a>
+    <div class="containerh"> 
+      <div class="c1"><img class="logo" src="logo.png" alt="Reservia"></div> 
+      <div class="c2"><a class="login" href="index.html">S'inscrire</a></div>       
+      <div class="c3"><a class="héb" href="#Hébergement">Hébergement</a></div>
+      <div class="c4"><a href="#Activités">Activité</a></div>
+    </div>
 
-    <nav>
-      <ul>
-        <li><a href="#Hébergement">Hébergement</a></li>
-        <li><a href="#Activités">Activité</a></li>
-      </ul>
-    </nav>
-
-    <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
     <p>En plein centre ville ou en pleine nature</p>
 
     <form>
-      <label for="ville"><i class="fas fa-map-marker-alt"></i></label>
-      <input type="text" id="ville">
-      <i class="fas fa-search"></i>
+      <input type="text" id="ville" placeholder="Marseille, France">
+      <input type="submit" value="">
     </form>
 
     <div>
       <h3>Filtres</h3>
-      <ul>
-          <li class="dollaricon"><button>Economique</button></li>
-          <li class="kidicon"><button>Familial</button></li>
-          <li class="hearticon"><button>Romantique</button></li>
-          <li class="peticon"><button>Animaux autorisés</button></li>
-      </ul>
+      <button class><i class="fas fa-money-bill-wave fa-lg"></i>&#201conomique</button>
+      <button><i class="fas fa-child fa-lg"></i>Familial</button>
+      <button><i class="fas fa-heart fa-lg"></i>Romantique</button>
+      <button><i class="fas fa-dog fa-lg"></i>Animaux autorisés</button>
+      
     </div>
 
     <p><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</p>
