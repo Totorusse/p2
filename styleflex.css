@@ -121,6 +121,7 @@ i {
     color :#0065FC;
 }
 
+
 .fa-child {
     padding-left: 5px;
 }
@@ -147,37 +148,59 @@ i {
 
 /* Fin du header*/
 
-.pop {
-    background-color: rgb(204, 204, 204, 0.5);
+.container1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(204, 204, 204, 0.5)
+
 }
 
+
+.container1 div {
+    border-radius: 25px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+
 .pop img {
-    width: 25%;
-    height: 25%;  
+    height: 100%;
+    width: 40%;
+    float: left;
+    object-fit: cover;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    border-radius: 25px 0px 0px 25px;
+}
+
+.pop div{
+    height: 150px;
+    width: 350px;
+    background-color: white;
+
 }
 
 .fa-fire {
-    text-align: right;
+    float: right;
 }
 
-.container1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.container1 > a {
-    border: 2px solid red;
-}
-
-.container2 {
-    display: flex;
-    flex-direction: wrap;
+.heb img {
+    height: 100%;
+    width: 50%;
+    float: left;
+    object-fit: cover;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    border-radius: 25px 0px 0px 25px;
 }
 
 .container3 {
     display: flex;
-    flex-direction: wrap;
+    flex-direction: column;
 }
 
 
