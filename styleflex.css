@@ -147,9 +147,27 @@ i {
 
 /* Fin du header*/
 
+.pop {
+    background-color: rgb(204, 204, 204, 0.5);
+}
+
+.pop img {
+    width: 25%;
+    height: 25%;  
+}
+
+.fa-fire {
+    text-align: right;
+}
+
 .container1 {
     display: flex;
-    flex-direction: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container1 > a {
+    border: 2px solid red;
 }
 
 .container2 {
