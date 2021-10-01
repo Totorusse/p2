@@ -19,60 +19,49 @@ p {
 
 .containerh {
     display:flex;
-    flex-direction: row;
     flex-wrap: wrap;
     line-height: 20px;
-}
-
-
-.containerh > div{
-    height: 80px;
+    text-align: center;
 }
 
 .logo {
     height: 80px;
+    margin-left: 5px;
 }
 
 .login {
-    line-height: 80px;
     color: #0065FC;
+    margin-right: 5px;
 }
 
-.ligne {
-    display: inline;
-}
 .c1 {
-    float: left;
-    width: 75%;
-
+    width: 50%;
+    text-align: left;
 }
 
 .c2 {
-    width: 350px;
+    width: 50%;
+    color :red;
+    text-align: right;
     line-height: 80px;
-    text-align: center;
-
-}
-
-.c2 a {
-    padding: 5px 20px;
-    font-weight: 400;
-
 }
 
 .c3 {
-    float: right;
+    width: 47%;
+    padding: 5px;
+    border-bottom-style: solid;
+    border-color: #0065FC; 
 }
 
-.heber {
-    color: #0065FC;
-    border-bottom: solid rgb(0, 101, 252, 1);
+.c4 {
+    width: 47%;
+    padding: 5px;
+    border-bottom-style: solid;
+    border-color: rgb(128, 128, 128,0.2); 
 }
 
-.act {
-    border-bottom: solid rgb(204, 204, 204, 0.5);
-
-
+.héb {
+   color: #0065FC;
 }
 
 input[type=text] {
@@ -106,7 +95,7 @@ input[placeholder] {
     color: rgb(0, 0, 0, 1);
 }
 
-header button {
+button {
     font-weight: bold;
     border: 2px solid #ccc;
     border-radius: 100px;
@@ -164,8 +153,8 @@ i {
     flex-direction: row-reverse;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: rgb(204, 204, 204, 0.5);
-    outline: solid rgb(204, 204, 204, 0.5) 10px;
+    background-color: rgb(204, 204, 204, 0.5)
+
 }
 
 
@@ -196,16 +185,11 @@ i {
 
 .fa-fire {
     float: right;
-    color: black;
-}
-
-.label p {
-    margin: -10px 0px 55px 0px;
 }
 
 .heb img {
     height: 100%;
-    width: 10%;
+    width: 50%;
     float: left;
     object-fit: cover;
     padding: 5px;
@@ -213,21 +197,10 @@ i {
     margin-right: 10px;
     border-radius: 25px 0px 0px 25px;
 }
-.heb {
-    background-color: white;
-}
-
-#greystar {
-    color: rgb(100, 100, 100, 0.2);
-}
-
 
 .container3 {
     display: flex;
     flex-direction: column;
 }
 
-.container3 img{
-    width: 10%;
-}
 
