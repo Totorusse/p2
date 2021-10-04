@@ -1,6 +1,6 @@
 body {
     font-family: 'Raleway', sans-serif;
-    margin: 10px;
+    margin: 15px;
 }
 
 a {
@@ -17,15 +17,17 @@ p {
     font-weight: lighter;
  }
 
+ /* début du header*/
+
 .containerh {
     display:flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     line-height: 20px;
+    justify-content: flex-end;
 }
 
-
-.containerh > div{
+.containerh > div ,nav {
     height: 80px;
 }
 
@@ -33,47 +35,51 @@ p {
     height: 80px;
 }
 
+.reservia {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
 .login {
     line-height: 80px;
     color: #0065FC;
 }
 
-.ligne {
-    display: inline;
-}
-.c1 {
-    float: left;
-    width: 75%;
-
-}
-
-.c2 {
-    width: 350px;
+.navig {
+    width: 450px;
     line-height: 80px;
-    text-align: center;
-
 }
 
-.c2 a {
+.navig a {
     padding: 5px 20px;
     font-weight: 400;
-
 }
 
-.c3 {
-    float: right;
+.ligneheber {
+    display: inline-block;
+    border-bottom: solid rgb(0, 101, 252, 1);
+    width: 49%;
+    text-align: center;
+    margin-left: -20px;
+    padding-left: 20px;
+}
+
+.ligneact {
+    display: inline-block;
+    border-bottom: solid rgb(100, 100, 100, 0.1);
+    width: 49%;
+    text-align: center;
+    margin: 0px -20px;
+    padding: 0px 20px;
 }
 
 .heber {
     color: #0065FC;
-    border-bottom: solid rgb(0, 101, 252, 1);
 }
 
-.act {
-    border-bottom: solid rgb(204, 204, 204, 0.5);
-
-
-}
+/* Fin du header*/
+ /* début de l'accueil*/
 
 input[type=text] {
     width: 250px;
@@ -106,7 +112,7 @@ input[placeholder] {
     color: rgb(0, 0, 0, 1);
 }
 
-header button {
+.filtres button {
     font-weight: bold;
     border: 2px solid #ccc;
     border-radius: 100px;
@@ -157,41 +163,85 @@ i {
     float: left;
 }
 
-/* Fin du header*/
+/* Fin de l'accueil*/
+ /* début du bloc populaire et hébergement*/
 
-.container1 {
+.popetheb {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
     flex-wrap: wrap;
-    background-color: rgb(204, 204, 204, 0.5);
-    outline: solid rgb(204, 204, 204, 0.5) 10px;
+    justify-content: space-around;
+    margin-top: 50px;
 }
 
+.popbloc {
+    background-color: rgb(204, 204, 204, 0.5);
+    width: 400px;
+    padding: 20px 40px;
+    border: solid red;
 
-.container1 div {
+
+}
+
+.poplabel {
     border-radius: 25px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    height: 150px;
+    width: 350px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.poplabel p {
+    margin: -10px 0px 55px 0px;
 }
 
 
 .pop img {
-    height: 100%;
+    height: 140px;
     width: 40%;
     float: left;
     object-fit: cover;
     padding: 5px;
-    box-sizing: border-box;
     margin-right: 10px;
     border-radius: 25px 0px 0px 25px;
 }
 
-.pop div{
-    height: 150px;
+.heb img {
+    height: 60%;
+    width: 100%;
+    float: top;
+    object-fit: cover;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 25px 25px 0px 0px;
+}
+.hebbloc {
+    background-color: white;
+    width: 700px;
+    padding: 20px 40px;
+    border: solid red;
+
+
+}
+
+.heblabel {
+    border-radius: 25px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    height: 200px;
     width: 350px;
     background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+}
 
+.textheblabel {
+    margin: -20px 0px 0px 20px;
+}
+
+.textheblabel p {
+    margin: -10px 0px 15px 0px;
 }
 
 .fa-fire {
@@ -199,28 +249,21 @@ i {
     color: black;
 }
 
-.label p {
-    margin: -10px 0px 55px 0px;
-}
-
-.heb img {
-    height: 100%;
-    width: 10%;
-    float: left;
-    object-fit: cover;
-    padding: 5px;
-    box-sizing: border-box;
-    margin-right: 10px;
-    border-radius: 25px 0px 0px 25px;
-}
-.heb {
-    background-color: white;
-}
-
 #greystar {
     color: rgb(100, 100, 100, 0.2);
 }
 
+.afficher {
+    border: none;
+    font-size: 22px;
+    background: none;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+/* Fin du bloc populaire et hébergement*/
+ /* début du bloc activités*/
 
 .container3 {
     display: flex;
