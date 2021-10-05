@@ -1,5 +1,7 @@
 body {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -22,12 +24,7 @@ p {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
-    line-height: 20px;
     justify-content: flex-end;
-}
-
-.containerh > div ,nav {
-    height: 80px;
 }
 
 .logo {
@@ -41,36 +38,35 @@ p {
 }
 
 .login {
-    line-height: 80px;
     color: #0065FC;
 }
 
 .navig {
     width: 450px;
-    line-height: 80px;
+    text-align: center;
 }
 
 .navig a {
-    padding: 5px 20px;
+    padding: 0px 50px;
     font-weight: 400;
 }
 
 .ligneheber {
     display: inline-block;
     border-bottom: solid rgb(0, 101, 252, 1);
-    width: 49%;
-    text-align: center;
-    margin-left: -20px;
-    padding-left: 20px;
+    width: 49.4%;
+    padding: 25px 0px;
 }
 
 .ligneact {
     display: inline-block;
     border-bottom: solid rgb(100, 100, 100, 0.1);
-    width: 49%;
-    text-align: center;
-    margin: 0px -20px;
-    padding: 0px 20px;
+    width: 49.4%;
+    padding: 25px 0px;
+}
+
+.inscription {
+    padding: 25px 0px;
 }
 
 .heber {
@@ -79,6 +75,10 @@ p {
 
 /* Fin du header*/
  /* début de la partie recherche*/
+
+ .recherche {
+    margin: 20px 0px 20px 20px;
+ }
 
 input[type=text] {
     width: 250px;
@@ -324,4 +324,31 @@ margin: 15px 0px 0px 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+/* Fin du bloc activité*/
+ /* début du bloc footer*/
 
+ footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(204, 204, 204, 0.5);
+ }
+
+ .foot {
+     width: 350px;
+ }
+
+ footer li {
+    list-style-type: none;
+    padding: 0px 0px 10px 0px;
+ }
+
+ footer ul {
+    margin: 0px;
+    padding: 0px 0px 10px 0px;
+ }
+
+ footer a {
+     font-weight: 400;
+ }
