@@ -79,7 +79,7 @@ p {
 }
 
 /* Fin du header*/
- /* début de l'accueil*/
+ /* début de la partie recherche*/
 
 input[type=text] {
     width: 250px;
@@ -163,7 +163,7 @@ i {
     float: left;
 }
 
-/* Fin de l'accueil*/
+/* Fin de la partie recherche*/
  /* début du bloc populaire et hébergement*/
 
 .popetheb {
