@@ -32,7 +32,7 @@ p {
 }
 
 .logo {
-    height: 80px;
+    height: 70px;
 }
 
 .reservia {
@@ -178,9 +178,6 @@ i {
     background-color: rgb(204, 204, 204, 0.5);
     width: 400px;
     padding: 20px 40px;
-    border: solid red;
-
-
 }
 
 .poplabel {
@@ -219,11 +216,8 @@ i {
 }
 .hebbloc {
     background-color: white;
-    width: 700px;
+    width: 1100px;
     padding: 20px 40px;
-    border: solid red;
-
-
 }
 
 .heblabel {
@@ -234,6 +228,14 @@ i {
     width: 350px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.heb {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
 }
 
 .textheblabel {
