@@ -14,7 +14,7 @@
 <body>
   <header>
 
-    <div class="containerh"> 
+    <div class="containerh"> <!--Bloc du header-->
       <div class="reservia"><img class="logo" src="logo.png" alt="Reservia"></div> 
       
       <nav class="navig">
@@ -84,9 +84,9 @@
       </div> <!-- FIN Bloc  populaire-->
 
 
-      <div class="hebbloc"> <!--Bloc  hébergement-->
+      <div class="hebbloc" id="Hébergement"> <!--Bloc  hébergement-->
         <h2>Hébergement à Marseille</h2> <!--Faut-il avoir une requête qui renseigne le nom de la ville?-->
-        <div class="heb" id="Hébergement">   <!--Bloc hébergement sans le titre-->   
+        <div class="heb">   <!--Bloc hébergement sans le titre-->   
           <a href="index.html">
             <div class="heblabel"> <!--etiquette du bloc hébergement-->
               <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="image">
@@ -160,47 +160,66 @@
       </div> <!-- FIN Bloc  hébergement-->
     </div>  <!-- FIN Bloc  regroupant populaire et hébergement-->
 
-  <div class="container3" id="Activités">
-    <h2>Activités à Marseille</h2> <!--Faut-il avoir une requête qui renseigne le nom de la ville?-->
-    <a href="index.html">
-      <div class="bigcard">
-        <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="image">
-        <h3>Vieux Port</h3>
-      </div>
-    </a>
-    <a href="index.html">
-      <div class="bigcard">
-        <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="image">
-        <h3>Fort de Pomègues</h3>
-      </div>
-    </a>
-    <a href="index.html">
-      <div class="bigcard">
-        <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="image">
-        <h3>Îles du Frioul</h3>
-      </div>
-    </a>
-    <a href="index.html">
-      <div class="bigcard">
-        <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="image">
-        <h3>Parc National des Calanques</h3>
-      </div>
-    </a>
-    <a href="index.html">
-      <div class="bigcard">
-        <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="image">
-        <h3>Notre-Dame-de-la-Garde</h3>
-      </div>
-    </a>
-    <a href="index.html">
-      <div class="bigcard">
-        <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="image">
-        <h3>Parc Longchamp</h3>
-      </div>
-    </a>
-  </div>
+  <div class="activites" id="Activités"><!--Bloc activité-->
 
-</div> <!--Fin du main-->
+    <h2>Activités à Marseille</h2> 
+    
+    <div class="act"> <!--Bloc activité sans titre-->
+
+      <div class="biglabel"> <!--Bloc grosse étiquette-->
+        <a href="index.html">
+          <div class="bigcard">
+            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="image">
+            <h3>Vieux Port</h3>
+          </div>
+        </a>
+      </div> <!--FIN Bloc grosse étiquette-->
+
+      <div class="smalllabel"> <!--Bloc petite étiquette-->
+        <a href="index.html">
+          <div class="smallcard">
+            <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="image">
+            <h3>Fort de Pomègues</h3>
+          </div>
+        </a>
+
+        <a href="index.html">
+          <div class="smallcard">
+            <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="image">
+            <h3>Îles du Frioul</h3>
+          </div>
+        </a>
+      </div> <!--FIN Bloc petite étiquette-->
+
+      <div class="biglabel"> <!--Bloc grosse étiquette-->
+        <a href="index.html">
+          <div class="bigcard">
+            <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="image">
+            <h3>Parc National des Calanques</h3>
+          </div>
+        </a>
+      </div> <!--FIN Bloc grosse étiquette-->
+
+      <div class="smalllabel"> <!--Bloc petite étiquette-->
+        <a href="index.html">
+          <div class="smallcard">
+            <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="image">
+            <h3>Notre-Dame-de-la-Garde</h3>
+          </div>
+        </a>
+
+        <a href="index.html">
+          <div class="smallcard">
+            <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="image">
+            <h3>Parc Longchamp</h3>
+          </div>
+        </a>
+      </div> <!--FIN Bloc petite étiquette-->
+
+    </div><!--FIN bloc activité sans titre-->
+  </div><!--FIN bloc activité-->
+
+</div> <!--FIN du main-->
 
 <footer>
   <div class="container4">

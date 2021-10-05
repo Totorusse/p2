@@ -1,6 +1,5 @@
 body {
     font-family: 'Raleway', sans-serif;
-    margin: 15px;
 }
 
 a {
@@ -267,12 +266,62 @@ i {
 /* Fin du bloc populaire et hébergement*/
  /* début du bloc activités*/
 
-.container3 {
+.activites {
+    padding: 20px 40px;
+ }
+
+.act {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.container3 img{
-    width: 10%;
+.act h3 {
+margin: 15px 0px 0px 25px;
 }
+
+.act img {
+    height: 70%;
+    width: 100%;
+    float: top;
+    object-fit: cover;
+    box-sizing: border-box;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.biglabel {
+    height: 200px;
+    width: 350px;
+    margin-bottom: 20px;
+
+
+}
+
+.bigcard{
+    border-radius: 25px;
+    box-sizing: border-box;
+    height: 200px;
+    width: 350px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.smalllabel {
+    height: 440px;
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+.smallcard {
+    border-radius: 25px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    height: 200px;
+    width: 350px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 
