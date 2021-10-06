@@ -18,7 +18,9 @@ h1 {
 }
 
 p {
-  font-weight: lighter;
+  font-size: 17px;
+  font-weight: 500;
+  opacity: 0.8;
 }
 
 /* début du header*/
@@ -46,33 +48,34 @@ p {
 
 .navig {
   width: 450px;
-  text-align: center;
 }
 
 .navig a {
-  padding: 0px 50px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .ligneheber {
   display: inline-block;
   border-bottom: solid rgb(0, 101, 252, 1);
-  width: 49.4%;
-  padding: 25px 0px;
+  width: 50%;
+  padding: 40px 0px 15px;
+  text-align: center;
 }
 
 .ligneact {
   display: inline-block;
   border-bottom: solid rgb(100, 100, 100, 0.1);
-  width: 49.4%;
-  padding: 25px 0px;
+  width: 50%;
+  margin-left: -5px;
+  padding: 40px 0px 15px;
+  text-align: center;
 }
 
 .inscription {
-  padding: 25px 0px;
+  padding: 40px 15px 0px;
 }
 
-.heber {
+.lienheber {
   color: #0065fc;
 }
 
@@ -80,7 +83,11 @@ p {
 /* début de la partie recherche*/
 
 .recherche {
-  margin: 20px 0px 20px 20px;
+  margin: 30px 0px 20px 20px;
+}
+
+.filtres {
+  margin-top: 40px;
 }
 
 input[type="text"] {
@@ -107,15 +114,36 @@ input[type="submit"] {
   background-image: url("loupe.png");
   background-size: contain;
   padding: 20px 30px 20px 30px;
+  cursor: pointer;
+}
+
+/* changement du bouton loupe en texte "recherche" */
+
+@media screen and (min-width: 480px) {
+  input[type="submit"] {
+    width: 170px;
+    border-radius: 0 15px 15px 0;
+    background-image: url("rechercher.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .titrefiltre {
+    float: left;
+    margin-right: 20px;
+    padding-top: 5px;
+  }
 }
 
 input[placeholder] {
-  font-weight: bold;
+  font-weight: 700;
   color: rgb(0, 0, 0, 1);
 }
 
 .filtres button {
-  font-weight: bold;
+  font-weight: 700;
   border: 2px solid #ccc;
   border-radius: 100px;
   font-size: 16px;
@@ -125,6 +153,7 @@ input[placeholder] {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 20px 20px 20px 15px;
+  cursor: pointer;
 }
 
 button:hover {
@@ -136,7 +165,7 @@ button i {
 }
 
 i {
-  color: #0065fc;
+  color: rgb(0, 101, 252, 1);
 }
 
 .fa-child {
@@ -159,7 +188,7 @@ i {
   border-radius: 100px;
   text-align: center;
   padding: 5px;
-  margin-right: 5px;
+  margin-right: 10px;
   float: left;
 }
 
@@ -180,14 +209,21 @@ i {
   padding: 20px 40px;
 }
 
+@media screen and (min-width: 480px) {
+  /* coins arrondi du bloc populaire */
+  .popbloc {
+    border-radius: 20px;
+  }
+}
+
 .poplabel {
-  border-radius: 25px;
+  border-radius: 20px;
   box-sizing: border-box;
   margin-bottom: 20px;
   height: 150px;
   width: 350px;
   background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 8px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 .poplabel p {
@@ -205,7 +241,7 @@ i {
   object-fit: cover;
   padding: 5px;
   margin-right: 10px;
-  border-radius: 25px 0px 0px 25px;
+  border-radius: 20px 0px 0px 20px;
 }
 
 .heb img {
@@ -215,7 +251,7 @@ i {
   object-fit: cover;
   padding: 5px;
   box-sizing: border-box;
-  border-radius: 25px 25px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
 }
 .hebbloc {
   background-color: white;
@@ -223,14 +259,22 @@ i {
   padding: 20px 40px;
 }
 
+@media screen and (min-width: 480px) {
+  /* background et coins arrondi du bloc hébergement */
+  .hebbloc {
+    background-color: rgb(204, 204, 204, 0.5);
+    border-radius: 20px;
+  }
+}
+
 .heblabel {
-  border-radius: 25px;
+  border-radius: 20px;
   box-sizing: border-box;
   margin-bottom: 20px;
   height: 200px;
   width: 350px;
   background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 .heb {
@@ -245,12 +289,20 @@ i {
 }
 
 .textheblabel p {
-  margin: -10px 0px 15px 0px;
+  margin: -15px 0px 15px 0px;
 }
 
 .fa-fire {
   float: right;
   color: black;
+}
+.etoile {
+  margin-top: -10px;
+  font-size: 14px;
+}
+
+.fa-star {
+  margin-right: 1px;
 }
 
 .greystar {
@@ -259,9 +311,8 @@ i {
 
 .afficher {
   border: none;
-  font-size: 22px;
+  font-size: 20px;
   background: none;
-  font-family: "Raleway", sans-serif;
   margin-top: 20px;
   font-weight: 700;
 }
@@ -290,7 +341,7 @@ i {
   float: top;
   object-fit: cover;
   box-sizing: border-box;
-  border-radius: 25px 25px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
 }
 
 .biglabel {
@@ -300,12 +351,21 @@ i {
 }
 
 .bigcard {
-  border-radius: 25px;
+  border-radius: 20px;
   box-sizing: border-box;
   height: 200px;
   width: 350px;
   background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 480px) {
+  .bigcard {
+    height: 420px;
+  }
+  .bigcard img {
+    height: 85%;
+  }
 }
 
 .smalllabel {
@@ -315,13 +375,13 @@ i {
 }
 
 .smallcard {
-  border-radius: 25px;
+  border-radius: 20px;
   box-sizing: border-box;
   margin-bottom: 20px;
   height: 200px;
   width: 350px;
   background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 /* Fin du bloc activité*/
