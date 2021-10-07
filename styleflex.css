@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  max-width: 1800px;
 }
 
 * {
@@ -42,12 +43,25 @@ p {
   left: 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .reservia {
+    left: 55px;
+  }
+}
+
 .login {
   color: #0065fc;
 }
 
 .navig {
   width: 450px;
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 480px) {
+  .navig {
+    margin-top: 0;
+  }
 }
 
 .navig a {
@@ -62,6 +76,15 @@ p {
   text-align: center;
 }
 
+/* bordure navigation en haut */
+@media screen and (min-width: 480px) {
+  .ligneheber {
+    border-top: solid rgb(0, 101, 252, 1);
+    padding-top: 35px;
+    border-bottom: hidden;
+  }
+}
+
 .ligneact {
   display: inline-block;
   border-bottom: solid rgb(100, 100, 100, 0.1);
@@ -69,6 +92,13 @@ p {
   margin-left: -5px;
   padding: 40px 0px 15px;
   text-align: center;
+}
+
+/* bordure navigation caché */
+@media screen and (min-width: 480px) {
+  .ligneact {
+    border-bottom: hidden;
+  }
 }
 
 .inscription {
@@ -80,10 +110,23 @@ p {
 }
 
 /* Fin du header*/
+/* début du main*/
+
+/* marge gauche */
+@media screen and (min-width: 480px) {
+  .main {
+    margin-left: 40px;
+  }
+}
+
 /* début de la partie recherche*/
 
 .recherche {
-  margin: 30px 0px 20px 20px;
+  margin: 50px 0px 20px 20px;
+}
+
+.texte1 {
+  margin: -5px 0 40px 0;
 }
 
 .filtres {
@@ -128,6 +171,8 @@ input[type="submit"] {
     background-size: auto;
   }
 }
+
+/* le titre filtre passe à gauche */
 
 @media screen and (min-width: 480px) {
   .titrefiltre {
@@ -192,6 +237,10 @@ i {
   float: left;
 }
 
+.texte2 {
+  margin: 30px 0;
+}
+
 /* Fin de la partie recherche*/
 /* début du bloc populaire et hébergement*/
 
@@ -205,7 +254,7 @@ i {
 
 .popbloc {
   background-color: rgb(204, 204, 204, 0.5);
-  width: 400px;
+  width: 350px;
   padding: 20px 40px;
 }
 
@@ -227,11 +276,11 @@ i {
 }
 
 .poplabel p {
-  margin: -10px 0px 45px 0px;
+  margin: -10px 0px 40px 0px;
 }
 
 .poplabel h3 {
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .pop img {
@@ -271,15 +320,15 @@ i {
   border-radius: 20px;
   box-sizing: border-box;
   margin-bottom: 20px;
-  height: 200px;
+  height: 220px;
   width: 350px;
   background-color: white;
-  box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
 }
 
 .heb {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -297,7 +346,7 @@ i {
   color: black;
 }
 .etoile {
-  margin-top: -10px;
+  margin-top: -5px;
   font-size: 14px;
 }
 
@@ -321,7 +370,7 @@ i {
 /* début du bloc activités*/
 
 .activites {
-  padding: 20px 40px;
+  padding: 20px 10px;
 }
 
 .act {
@@ -345,43 +394,64 @@ i {
 }
 
 .biglabel {
-  height: 200px;
-  width: 350px;
-  margin-bottom: 20px;
-}
-
-.bigcard {
-  border-radius: 20px;
   box-sizing: border-box;
-  height: 200px;
+  height: 400px;
   width: 350px;
-  background-color: white;
-  box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.1);
-}
-
-@media screen and (min-width: 480px) {
-  .bigcard {
-    height: 420px;
-  }
-  .bigcard img {
-    height: 85%;
-  }
+  margin-top: 20px;
+  margin-bottom: -180px;
 }
 
 .smalllabel {
-  height: 440px;
+  box-sizing: border-box;
+  height: 400px;
   width: 350px;
   margin-bottom: 20px;
 }
 
-.smallcard {
+.bigcard,
+.fortcard,
+.ilescard,
+.damecard,
+.parccard {
   border-radius: 20px;
   box-sizing: border-box;
   margin-bottom: 20px;
   height: 200px;
   width: 350px;
   background-color: white;
-  box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 1290px) {
+  .bigcard {
+    height: 500px;
+  }
+  .bigcard img {
+    height: 90%;
+  }
+  .fortcard {
+    height: 270px;
+    margin-top: 20px;
+  }
+  .fortcard img {
+    height: 75%;
+  }
+
+  .ilescard {
+    height: 190px;
+    margin-top: 40px;
+  }
+  .damecard {
+    height: 220px;
+    margin-top: 20px;
+  }
+  .parccard {
+    height: 240px;
+    margin-top: 40px;
+  }
+  .activites {
+    height: 600px;
+  }
 }
 
 /* Fin du bloc activité*/
