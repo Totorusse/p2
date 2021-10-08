@@ -15,7 +15,7 @@ a {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 24px;
 }
 
 p {
@@ -34,16 +34,16 @@ p {
 }
 
 .logo {
-  height: 70px;
+  height: 50px;
 }
 
 .reservia {
   position: absolute;
-  top: 10px;
+  top: 20px;
   left: 15px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 551px) {
   .reservia {
     left: 55px;
   }
@@ -55,12 +55,13 @@ p {
 
 .navig {
   width: 450px;
-  margin-top: 40px;
+  margin-top: 5px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 551px) {
   .navig {
     margin-top: 0;
+    margin-left: 150px;
   }
 }
 
@@ -77,7 +78,7 @@ p {
 }
 
 /* bordure navigation en haut */
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 710px) {
   .ligneheber {
     border-top: solid rgb(0, 101, 252, 1);
     padding-top: 35px;
@@ -95,7 +96,7 @@ p {
 }
 
 /* bordure navigation caché */
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
   .ligneact {
     border-bottom: hidden;
   }
@@ -111,26 +112,22 @@ p {
 
 /* Fin du header*/
 /* début du main*/
-
-/* marge gauche */
-@media screen and (min-width: 480px) {
-  .main {
-    margin-left: 40px;
-  }
-}
-
 /* début de la partie recherche*/
 
 .recherche {
-  margin: 50px 0px 20px 20px;
+  margin: 20px 0px 20px 20px;
 }
 
 .texte1 {
-  margin: -5px 0 40px 0;
+  margin: -5px 0 25px 0;
+}
+
+.formulaire {
+  margin-bottom: 20px;
 }
 
 .filtres {
-  margin-top: 40px;
+  margin-top: 25x;
 }
 
 input[type="text"] {
@@ -162,7 +159,7 @@ input[type="submit"] {
 
 /* changement du bouton loupe en texte "recherche" */
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
   input[type="submit"] {
     width: 170px;
     border-radius: 0 15px 15px 0;
@@ -174,7 +171,7 @@ input[type="submit"] {
 
 /* le titre filtre passe à gauche */
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
   .titrefiltre {
     float: left;
     margin-right: 20px;
@@ -192,7 +189,7 @@ input[placeholder] {
   border: 2px solid #ccc;
   border-radius: 100px;
   font-size: 16px;
-  margin: 5px 5px 5px 0px;
+  margin: 0px 5px 5px 0px;
   background-image: url("roundback.png");
   background-position: left;
   background-size: cover;
@@ -206,7 +203,7 @@ button:hover {
 }
 
 button i {
-  margin-right: 30px;
+  margin-right: 28px;
 }
 
 i {
@@ -238,7 +235,7 @@ i {
 }
 
 .texte2 {
-  margin: 30px 0;
+  margin: 15px 0;
 }
 
 /* Fin de la partie recherche*/
@@ -253,12 +250,12 @@ i {
 }
 
 .popbloc {
-  background-color: rgb(204, 204, 204, 0.5);
-  width: 350px;
-  padding: 20px 40px;
+  background-color: rgb(204, 204, 204, 0.3);
+  width: 320px;
+  padding: 20px 30px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
   /* coins arrondi du bloc populaire */
   .popbloc {
     border-radius: 20px;
@@ -270,7 +267,7 @@ i {
   box-sizing: border-box;
   margin-bottom: 20px;
   height: 150px;
-  width: 350px;
+  width: 320px;
   background-color: white;
   box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.1);
 }
@@ -308,10 +305,10 @@ i {
   padding: 20px 40px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
   /* background et coins arrondi du bloc hébergement */
   .hebbloc {
-    background-color: rgb(204, 204, 204, 0.5);
+    background-color: rgb(204, 204, 204, 0.3);
     border-radius: 20px;
   }
 }
@@ -380,6 +377,14 @@ i {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1420px) {
+  /* coins arrondi du bloc populaire */
+  .act {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .act h3 {
   margin: 15px 0px 0px 25px;
 }
@@ -422,7 +427,7 @@ i {
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (min-width: 1290px) {
+@media screen and (min-width: 1420px) {
   .bigcard {
     height: 500px;
   }
@@ -461,12 +466,14 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: rgb(204, 204, 204, 0.5);
+  justify-content: space-between;
+  background-color: rgb(204, 204, 204, 0.3);
+  padding-left: 40px;
 }
 
 .foot {
-  width: 350px;
+  width: 375px;
+  margin-bottom: 10px;
 }
 
 footer li {
