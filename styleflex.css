@@ -127,7 +127,7 @@ p {
 }
 
 .filtres {
-  margin-top: 25x;
+  margin-top: 25px;
 }
 
 input[type="text"] {
@@ -294,7 +294,6 @@ i {
 .heb img {
   height: 60%;
   width: 100%;
-  float: top;
   object-fit: cover;
   padding: 5px;
   box-sizing: border-box;
@@ -393,7 +392,6 @@ i {
 .act img {
   height: 70%;
   width: 100%;
-  float: top;
   object-fit: cover;
   box-sizing: border-box;
   border-radius: 20px 20px 0px 0px;
