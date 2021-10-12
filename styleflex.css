@@ -25,43 +25,19 @@ p {
 
 /* début du header*/
 
-.containerh {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap-reverse;
-  justify-content: flex-end;
-}
-
 .logo {
   height: 50px;
 }
 
 .reservia {
-  position: absolute;
-  top: 20px;
-  left: 15px;
+  display: inline-block;
+  width: 1%;
+  padding: 20px 20px;
 }
 
-@media screen and (min-width: 551px) {
-  .reservia {
-    left: 55px;
-  }
-}
-
-.login {
-  color: #0065fc;
-}
-
-.navig {
-  width: 450px;
+.navigphone {
+  width: 100%;
   margin-top: 5px;
-}
-
-@media screen and (min-width: 551px) {
-  .navig {
-    margin-top: 0;
-    margin-left: 150px;
-  }
 }
 
 .navig a {
@@ -76,15 +52,6 @@ p {
   text-align: center;
 }
 
-/* bordure navigation en haut */
-@media screen and (min-width: 710px) {
-  .ligneheber {
-    border-top: solid rgb(0, 101, 252, 1);
-    padding-top: 35px;
-    border-bottom: hidden;
-  }
-}
-
 .ligneact {
   display: inline-block;
   border-bottom: solid rgb(100, 100, 100, 0.1);
@@ -94,19 +61,55 @@ p {
   text-align: center;
 }
 
-/* bordure navigation caché */
-@media screen and (min-width: 520px) {
-  .ligneact {
-    border-bottom: hidden;
-  }
+.mainnavig {
+  margin-top: 1px;
 }
 
-.inscription {
-  padding: 40px 15px 0px;
+.navigdesk {
+  display: inline-block;
+  text-align: right;
+  width: 90%;
+}
+
+.ligneheberdesk {
+  border-top: solid rgb(0, 101, 252, 1);
+}
+
+.ligneactdesk,
+.ligneheberdesk,
+.inscriptiondesk {
+  display: inline-block;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.inscriptionphone {
+  float: right;
+  padding: 40px 40px;
+}
+
+.login {
+  color: #0065fc;
 }
 
 .lienheber {
   color: #0065fc;
+}
+
+@media screen and (max-width: 600px) {
+  .navigdesk {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .navigphone,
+  .inscriptionphone {
+    display: none;
+  }
+  .navigdesk {
+    float: right;
+  }
 }
 
 /* Fin du header*/
@@ -159,7 +162,7 @@ input[type="submit"] {
 
 /* changement du bouton loupe en texte "recherche" */
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 600px) {
   input[type="submit"] {
     width: 170px;
     border-radius: 0 15px 15px 0;
@@ -171,7 +174,7 @@ input[type="submit"] {
 
 /* le titre filtre passe à gauche */
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 600px) {
   .titrefiltre {
     float: left;
     margin-right: 20px;
@@ -244,28 +247,37 @@ i {
 .popetheb {
   display: flex;
   flex-direction: row-reverse;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
   margin-top: 50px;
 }
 
+@media screen and (max-width: 600px) {
+  .popetheb {
+    flex-wrap: wrap;
+  }
+}
+
 .popbloc {
   background-color: rgb(204, 204, 204, 0.3);
-  width: 320px;
+  width: 100%;
   padding: 20px 30px;
 }
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 600px) {
   /* coins arrondi du bloc populaire */
   .popbloc {
+    width: 320px;
+    height: max-content;
     border-radius: 20px;
+    margin-left: 20px;
   }
 }
 
 .poplabel {
   border-radius: 20px;
   box-sizing: border-box;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   height: 150px;
   width: 320px;
   background-color: white;
@@ -304,7 +316,7 @@ i {
   padding: 20px 40px;
 }
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 600px) {
   /* background et coins arrondi du bloc hébergement */
   .hebbloc {
     background-color: rgb(204, 204, 204, 0.3);
@@ -369,21 +381,6 @@ i {
   padding: 20px 10px;
 }
 
-.act {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-@media screen and (max-width: 1420px) {
-  /* coins arrondi du bloc populaire */
-  .act {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 .act h3 {
   margin: 15px 0px 0px 25px;
 }
@@ -396,19 +393,11 @@ i {
   border-radius: 20px 20px 0px 0px;
 }
 
-.biglabel {
-  box-sizing: border-box;
-  height: 400px;
-  width: 350px;
-  margin-top: 20px;
-  margin-bottom: -180px;
-}
-
+.biglabel,
 .smalllabel {
   box-sizing: border-box;
-  height: 400px;
+  height: max-content;
   width: 350px;
-  margin-bottom: 20px;
 }
 
 .bigcard,
@@ -418,42 +407,42 @@ i {
 .parccard {
   border-radius: 20px;
   box-sizing: border-box;
-  margin-bottom: 20px;
   height: 200px;
-  width: 350px;
   background-color: white;
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
 }
 
-@media screen and (min-width: 1420px) {
-  .bigcard {
-    height: 500px;
+@media screen and (min-width: 600px) {
+  .act {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: max-content;
   }
-  .bigcard img {
-    height: 90%;
-  }
-  .fortcard {
-    height: 270px;
-    margin-top: 20px;
-  }
-  .fortcard img {
-    height: 75%;
+  .biglabel,
+  .smalllabel {
+    margin-right: 10px;
+    width: 25%;
+    max-width: 300px;
   }
 
-  .ilescard {
-    height: 190px;
-    margin-top: 40px;
-  }
-  .damecard {
-    height: 220px;
-    margin-top: 20px;
-  }
+  .bigcard,
+  .fortcard,
+  .ilescard,
+  .damecard,
   .parccard {
-    height: 240px;
-    margin-top: 40px;
+    margin-right: 10px;
+    overflow: hidden;
   }
-  .activites {
-    height: 600px;
+  .bigcard {
+    height: 410px;
+  }
+  .bigcard img {
+    height: 80%;
+  }
+  .act h3 {
+    margin: 5px 0px 0px 15px;
   }
 }
 
