@@ -15,6 +15,11 @@
       src="https://kit.fontawesome.com/3ec3680ae0.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function myFunction() { 
+       document.getElementById("demo").innerHTML = "Désolé je ne gère pas encore JavaScript!";
+        }
+    </script>
   </head>
 
   <body>
@@ -156,46 +161,53 @@
           <!--Faut-il avoir une requête qui renseigne le nom de la ville?-->
           <div class="heb">
             <!--Bloc hébergement sans le titre-->
-            <a href="index.html">
-              <div class="heblabel">
-                <!--etiquette du bloc hébergement-->
-                <img
-                  src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                  alt="image"
-                />
-                <div class="textheblabel">
-                  <!--texte de l'étiquette hébergement-->
-                  <h3>Auberge de la Cannebière</h3>
-                  <p>Nuit à partir de 25€</p>
-                  <div class="etoile">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i
-                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                    ><i class="fas fa-star greystar"></i>
+          <div class="hebhaut">
+            <!--Bloc hébergement 3 etiquettes en haut-->
+            <div class="blocetiquetteheb">
+              <a href="index.html">
+                <div class="heblabel">
+                  <!--etiquette du bloc hébergement-->
+                  <img
+                    src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                    alt="image"
+                  />
+                  <div class="textheblabel">
+                    <!--texte de l'étiquette hébergement-->
+                    <h3>Auberge de la Cannebière</h3>
+                    <p>Nuit à partir de 25€</p>
+                    <div class="etoile">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i
+                      ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                      ><i class="fas fa-star greystar"></i>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
 
-            <a href="index.html">
-              <div class="heblabel">
-                <!--etiquette du bloc hébergement-->
-                <img
-                  src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                  alt="image"
-                />
-                <div class="textheblabel">
-                  <!--texte de l'étiquette hébergement-->
-                  <h3>Hôtel du port</h3>
-                  <p>Nuit à partir de 52€</p>
-                  <div class="etoile">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i
-                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                    ><i class="fas fa-star"></i>
+            <div class="blocetiquetteheb">
+              <a href="index.html">
+                <div class="heblabel">
+                  <!--etiquette du bloc hébergement-->
+                  <img
+                    src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                    alt="image"
+                  />
+                  <div class="textheblabel">
+                    <!--texte de l'étiquette hébergement-->
+                    <h3>Hôtel du port</h3>
+                    <p>Nuit à partir de 52€</p>
+                    <div class="etoile">
+                      <i class="fas fa-star"></i><i class="fas fa-star"></i
+                      ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                      ><i class="fas fa-star"></i>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
 
+            <div class="blocetiquetteheb">
             <a href="index.html">
               <div class="heblabel">
                 <!--etiquette du bloc hébergement-->
@@ -215,7 +227,11 @@
                 </div>
               </div>
             </a>
+            </div>
+          </div>
 
+          <div class="hebbas">
+            <div class="blocetiquetteheb">
             <a href="index.html">
               <div class="heblabel">
                 <!--etiquette du bloc hébergement-->
@@ -236,7 +252,9 @@
                 </div>
               </div>
             </a>
+            </div>
 
+            <div class="blocetiquetteheb">
             <a href="index.html">
               <div class="heblabel">
                 <!--etiquette du bloc hébergement-->
@@ -256,7 +274,9 @@
                 </div>
               </div>
             </a>
-
+            </div>
+                        
+            <div class="blocetiquetteheb">
             <a href="index.html">
               <div class="heblabel">
                 <!--etiquette du bloc hébergement-->
@@ -276,10 +296,12 @@
                 </div>
               </div>
             </a>
+            </div>
           </div>
+        </div>
           <!--FIN Bloc hebergement sans le titre-->
 
-          <button class="afficher">Afficher plus</button>
+          <button class="afficher" id="demo" onClick="myFunction()"><span>Afficher plus</span></button>
         </div>
         <!-- FIN Bloc  hébergement-->
       </div>

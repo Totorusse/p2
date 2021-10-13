@@ -31,7 +31,7 @@ p {
 
 .reservia {
   display: inline-block;
-  width: 1%;
+  width: 0;
   padding: 20px 20px;
 }
 
@@ -110,6 +110,9 @@ p {
   .navigdesk {
     float: right;
   }
+  .reservia {
+    padding-left: 40px;
+  }
 }
 
 /* Fin du header*/
@@ -117,7 +120,13 @@ p {
 /* début de la partie recherche*/
 
 .recherche {
-  margin: 20px 0px 20px 20px;
+  padding-left: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .recherche {
+    padding: 20px 0 0 40px;
+  }
 }
 
 .texte1 {
@@ -247,30 +256,36 @@ i {
 .popetheb {
   display: flex;
   flex-direction: row-reverse;
-  flex-wrap: nowrap;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 50px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
   .popetheb {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    padding: 0 20px 0 40px;
   }
 }
 
 .popbloc {
-  background-color: rgb(204, 204, 204, 0.3);
   width: 100%;
+  background-color: rgb(204, 204, 204, 0.3);
   padding: 20px 30px;
 }
 
 @media screen and (min-width: 600px) {
-  /* coins arrondi du bloc populaire */
   .popbloc {
-    width: 320px;
+    max-width: 310px;
     height: max-content;
     border-radius: 20px;
-    margin-left: 20px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .popbloc {
+    height: auto;
   }
 }
 
@@ -312,15 +327,19 @@ i {
 }
 .hebbloc {
   background-color: white;
-  width: 1100px;
-  padding: 20px 40px;
+  width: 100%;
+  padding: 20px 30px;
 }
 
 @media screen and (min-width: 600px) {
   /* background et coins arrondi du bloc hébergement */
   .hebbloc {
+    width: 70%;
     background-color: rgb(204, 204, 204, 0.3);
     border-radius: 20px;
+  }
+  .hebbas {
+    display: none;
   }
 }
 
@@ -329,7 +348,7 @@ i {
   box-sizing: border-box;
   margin-bottom: 20px;
   height: 220px;
-  width: 350px;
+  width: 320px;
   background-color: white;
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
 }
@@ -339,6 +358,28 @@ i {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+@media screen and (min-width: 992px) {
+  .blocetiquetteheb {
+    width: 100%;
+    margin-right: 20px;
+  }
+  .hebhaut {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .hebbas {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .heblabel {
+    width: 100%;
+    max-width: 350px;
+    overflow: hidden;
+  }
 }
 
 .textheblabel {
@@ -372,13 +413,14 @@ i {
   background: none;
   margin-top: 20px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 /* Fin du bloc populaire et hébergement*/
 /* début du bloc activités*/
 
 .activites {
-  padding: 20px 10px;
+  padding: 20px 20px;
 }
 
 .act h3 {
@@ -397,7 +439,8 @@ i {
 .smalllabel {
   box-sizing: border-box;
   height: max-content;
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
 }
 
 .bigcard,
@@ -414,6 +457,9 @@ i {
 }
 
 @media screen and (min-width: 600px) {
+  .activites {
+    padding-left: 40px;
+  }
   .act {
     display: flex;
     flex-direction: row;
@@ -455,12 +501,12 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: rgb(204, 204, 204, 0.3);
-  padding-left: 40px;
 }
 
 .foot {
   width: 375px;
   margin-bottom: 10px;
+  padding-left: 20px;
 }
 
 footer li {
@@ -475,4 +521,10 @@ footer ul {
 
 footer a {
   font-weight: 400;
+}
+
+@media screen and (min-width: 600px) {
+  .foot {
+    padding-left: 40px;
+  }
 }
