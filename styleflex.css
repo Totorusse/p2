@@ -68,7 +68,7 @@ p {
 .navigdesk {
   display: inline-block;
   text-align: right;
-  width: 90%;
+  width: 80%;
 }
 
 .ligneheberdesk {
@@ -88,10 +88,7 @@ p {
   padding: 40px 40px;
 }
 
-.login {
-  color: #0065fc;
-}
-
+.login,
 .lienheber {
   color: #0065fc;
 }
@@ -109,6 +106,7 @@ p {
   }
   .navigdesk {
     float: right;
+    padding-right: 40px;
   }
   .reservia {
     padding-left: 40px;
@@ -257,15 +255,8 @@ i {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-top: 50px;
-}
-
-@media screen and (min-width: 600px) {
-  .popetheb {
-    flex-wrap: nowrap;
-    padding: 0 20px 0 40px;
-  }
+  margin-bottom: 20px;
 }
 
 .popbloc {
@@ -273,28 +264,15 @@ i {
   background-color: rgb(204, 204, 204, 0.3);
   padding: 20px 30px;
 }
-
-@media screen and (min-width: 600px) {
-  .popbloc {
-    max-width: 310px;
-    height: max-content;
-    border-radius: 20px;
-    margin-left: 10px;
-  }
+.pop {
+  padding-top: 10px;
 }
-
-@media screen and (min-width: 992px) {
-  .popbloc {
-    height: auto;
-  }
-}
-
 .poplabel {
   border-radius: 20px;
   box-sizing: border-box;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   height: 150px;
-  width: 320px;
+  width: 100%;
   background-color: white;
   box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.1);
 }
@@ -331,36 +309,115 @@ i {
   padding: 20px 30px;
 }
 
-@media screen and (min-width: 600px) {
-  /* background et coins arrondi du bloc hébergement */
-  .hebbloc {
-    width: 70%;
-    background-color: rgb(204, 204, 204, 0.3);
-    border-radius: 20px;
-  }
-  .hebbas {
-    display: none;
-  }
-}
-
 .heblabel {
   border-radius: 20px;
   box-sizing: border-box;
   margin-bottom: 20px;
   height: 220px;
-  width: 320px;
+  width: 100%;
   background-color: white;
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
+}
+
+.hebbas,
+.hebhaut {
+  width: 100%;
 }
 
 .heb {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.textheblabel {
+  margin: -20px 0px 0px 20px;
+}
+
+.textpoplabel {
+  margin: -20px 0px 0px 20px;
+}
+
+.textheblabel p {
+  margin: -15px 0px 15px 0px;
+}
+
+.fa-fire {
+  color: black;
+  float: right;
+  position: relative;
+  top: 25px;
+  font-size: 22px;
+}
+
+.etoile {
+  font-size: 14px;
+  position: relative;
+  bottom: 5px;
+}
+
+.fa-star {
+  margin-right: 1px;
+}
+
+.greystar {
+  color: rgb(100, 100, 100, 0.2);
+}
+
+@media screen and (min-width: 600px) {
+  .popetheb {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 40px;
+  }
+  .popbloc {
+    width: 50%;
+    max-width: 320px;
+    height: max-content;
+    border-radius: 20px;
+    margin-left: 10px;
+  }
+  .hebbloc {
+    width: 50%;
+    background-color: rgb(204, 204, 204, 0.3);
+    border-radius: 20px;
+  }
+  .poplabel,
+  .heblabel {
+    width: 100%;
+    overflow: hidden;
+  }
+   .hebbas {
+    display: none;
+  }
+  .poplabel h3,
+  p {
+    font-size: min(17px, 2vw);
+  }
+  .heblabel h3,
+  p {
+    font-size: min(17px, 2vw);
+  }
+  .poplabel i {
+    font-size: min(14px, 1.5vw);
+  }
+  .heblabel i {
+    font-size: min(14px, 1.5vw);
+  }
+
 }
 
 @media screen and (min-width: 992px) {
+  .hebbloc {
+    width: 75%;
+    padding: 20px 0 20px 30px;
+  }
+  .popbloc {
+    max-width: 350px;
+    width: 25%;
+  }
+
   .blocetiquetteheb {
     width: 100%;
     margin-right: 20px;
@@ -380,31 +437,23 @@ i {
     max-width: 350px;
     overflow: hidden;
   }
-}
-
-.textheblabel {
-  margin: -20px 0px 0px 20px;
-}
-
-.textheblabel p {
-  margin: -15px 0px 15px 0px;
-}
-
-.fa-fire {
-  float: right;
-  color: black;
-}
-.etoile {
-  margin-top: -5px;
-  font-size: 14px;
-}
-
-.fa-star {
-  margin-right: 1px;
-}
-
-.greystar {
-  color: rgb(100, 100, 100, 0.2);
+  .popabel {
+    overflow: hidden;
+  }
+  .poplabel h3,
+  p {
+    font-size: min(17px, 1.2vw);
+  }
+  .heblabel h3,
+  p {
+    font-size: min(17px, 1.2vw);
+  }
+  .poplabel i {
+    font-size: min(14px, 1.5vw);
+  }
+  .heblabel i {
+    font-size: min(14px, 1.5vw);
+  }
 }
 
 .afficher {
@@ -420,7 +469,8 @@ i {
 /* début du bloc activités*/
 
 .activites {
-  padding: 20px 20px;
+  padding: 20px 30px;
+  margin-bottom: 20px;
 }
 
 .act h3 {
@@ -440,7 +490,6 @@ i {
   box-sizing: border-box;
   height: max-content;
   width: 100%;
-  max-width: 350px;
 }
 
 .bigcard,
@@ -458,7 +507,7 @@ i {
 
 @media screen and (min-width: 600px) {
   .activites {
-    padding-left: 40px;
+    padding: 0 40px;
   }
   .act {
     display: flex;
@@ -468,17 +517,18 @@ i {
   }
   .biglabel,
   .smalllabel {
-    margin-right: 10px;
     width: 25%;
     max-width: 300px;
   }
 
   .bigcard,
   .fortcard,
-  .ilescard,
+  .ilescard {
+    margin-right: 15px;
+    overflow: hidden;
+  }
   .damecard,
   .parccard {
-    margin-right: 10px;
     overflow: hidden;
   }
   .bigcard {
@@ -506,7 +556,7 @@ footer {
 .foot {
   width: 375px;
   margin-bottom: 10px;
-  padding-left: 20px;
+  padding: 20px 30px;
 }
 
 footer li {
