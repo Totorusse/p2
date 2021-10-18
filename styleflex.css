@@ -280,11 +280,12 @@ i {
 }
 
 .poplabel p {
-  margin: -10px 0px 40px 0px;
+  margin-top: -10px;
 }
 
-.poplabel h3 {
-  padding-top: 15px;
+.poplabel .text {
+  padding-top: 5px;
+  height: 75%;
 }
 
 .pop img {
@@ -334,11 +335,12 @@ i {
 }
 
 .textheblabel {
+  height: 45%;
   margin: -20px 0px 0px 20px;
 }
 
 .textpoplabel {
-  margin: -20px 0px 0px 20px;
+  height: 100%;
 }
 
 .textheblabel p {
@@ -355,8 +357,6 @@ i {
 
 .etoile {
   font-size: 14px;
-  position: relative;
-  bottom: 5px;
 }
 
 .fa-star {
