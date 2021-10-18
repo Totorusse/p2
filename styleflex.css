@@ -263,7 +263,7 @@ i {
 
 .popbloc {
   width: 100%;
-  background-color: rgb(242, 242, 242, 0.7);
+  background-color: rgb(242, 242, 242, 1);
   padding: 20px 30px;
 }
 .pop {
@@ -382,7 +382,7 @@ i {
   }
   .hebbloc {
     width: 50%;
-    background-color: rgb(242, 242, 242, 0.7);
+    background-color: rgb(242, 242, 242, 1);
     border-radius: 20px;
   }
   .poplabel,
@@ -551,7 +551,7 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: rgb(242, 242, 242, 0.7);
+  background-color: rgb(242, 242, 242, 1);
 }
 
 .foot {
